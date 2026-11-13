@@ -30,13 +30,13 @@ python3 app.py
 
 止めるときは端末A で Ctrl+C。中身は全部消えます（メモリにだけ持つため）。
 
-うまく向かないとき: 本物の鍵を環境変数（`AWS_ACCESS_KEY_ID` など）や `AWS_PROFILE` に入れていると、そちらが優先されます。手元で使う端末では外してください（[公式](https://docs.aws.amazon.com/emulator/latest/userguide/point-sdk.html)）。
+うまく向かないとき: 本物の鍵を環境変数（`AWS_ACCESS_KEY_ID` など）や `AWS_PROFILE` に入れていると、そちらが優先されます。手元で使う端末では外してください（[公式](https://docs.aws.amazon.com/emulator/latest/userguide/point-sdk-to-emulator.html)）。
 
 ## Mac・Windows
 
 公式の案内は Docker で動かす形です（既製のイメージは無く、短い Dockerfile から作ります）。
 手順は公式の [Getting started with Docker](https://docs.aws.amazon.com/emulator/latest/userguide/getting-started-docker.html) を見てください。
-向け先の環境変数は、公式の [全行の設定](https://docs.aws.amazon.com/emulator/latest/userguide/point-sdk.html) を使ってください。
+向け先の環境変数は、公式の [全行の設定](https://docs.aws.amazon.com/emulator/latest/userguide/point-sdk-to-emulator.html) を使ってください。
 **動画では Mac・Windows（Docker）は試していません。** 上の2行で通ると確かめたのは Linux のパッケージの形だけです。
 
 Python 以外の SDK（Node・Java・Rust・.NET など）は、証明書の設定が別に要る場合があります（公式 docs の各 SDK の節）。
